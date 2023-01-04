@@ -144,6 +144,7 @@
       -ms-flex-align: center;
           align-items: center;
   gap: 0.5rem;
+  cursor: pointer;
 }
 
 .hero-container .bicycle {
@@ -224,6 +225,145 @@
 .electric .electric-left .electric-price button:hover {
   background-color: white;
   color: black;
+}
+
+.key-features {
+  width: 90%;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  margin-top: 4rem;
+}
+
+.key-features h2 {
+  font-weight: 500;
+  font-size: 4.5rem;
+}
+
+.key-features .parent-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.key-features .child-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 0.2rem;
+}
+
+.key-features .child-container img {
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.key-features .text-container {
+  text-align: center;
+}
+
+.key-features .text-container h4 {
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+
+.key-features .text-container p {
+  margin-top: 0.5rem;
+}
+
+.ride-awake {
+  width: 90%;
+  margin: 5rem auto;
+}
+
+.ride-awake .ride-container {
+  width: 100%;
+  margin-top: 2rem;
+}
+
+.ride-awake .ride-container .ride-texts {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  gap: 6rem;
+}
+
+.ride-awake .ride-container .ride-texts p {
+  font-size: 1rem;
+}
+
+.ride-awake .ride-container .ride-image {
+  background-image: url("/assets/images/image-2.png");
+  background-size: cover;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  margin-top: 3rem;
+  height: 100vh;
+  border-radius: 1.9rem;
+}
+
+.ride-awake .ride-container .ride-image .ride-bottom {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  padding: 3.75rem 3.2rem;
+}
+
+.ride-awake .ride-container .ride-image .ride-bottom .ride-stats {
+  color: white;
+  width: 30%;
+}
+
+.ride-awake .ride-container .ride-image .ride-bottom .ride-stats h4 {
+  font-size: 2.5rem;
+  font-weight: 500;
+}
+
+.ride-awake .ride-container .ride-image .ride-bottom .ride-stats p {
+  margin-top: 0.5rem;
+}
+
+.ride-awake .ride-container .ride-image .ride-bottom .ride-icons-store {
+  cursor: pointer;
+}
+
+.ride-awake h2 {
+  font-size: 4.5rem;
+  font-weight: 500;
 }
 
 @-webkit-keyframes fromLeft {

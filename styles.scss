@@ -96,7 +96,8 @@
         .play{
             display: flex;
             align-items: center;
-            gap: 0.5rem
+            gap: 0.5rem;
+            cursor: pointer;
         }
 
         .bicycle{
@@ -155,6 +156,113 @@
             }
             }
         }
+    }
+}
+
+
+.key-features{
+    width: 90%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 4rem;
+
+    h2{
+        font-weight: 500;
+        font-size: 4.5rem;
+    }
+
+    .parent-container{
+        display: flex;
+        justify-content: space-between;
+        gap: 2rem;
+        margin-top: 2rem;
+    }
+
+    .child-container{
+        display: flex;
+        flex-direction: column;
+        gap: 0.2rem;
+
+        img {
+            object-fit: cover;
+        }
+    }
+
+    .text-container{
+        text-align: center;
+
+        h4{
+            font-size: 1.5rem;
+            font-weight: 500;
+        }
+
+        p{
+            margin-top: 0.5rem;
+        }
+    }
+}
+
+.ride-awake{
+    width: 90%;
+    margin: 5rem auto;
+
+    .ride-container{
+        width: 100%;
+        margin-top: 2rem;
+
+        .ride-texts{
+            display: flex;
+            justify-content: space-between;
+            gap: 6rem;
+
+            p{
+                font-size: 1rem;
+            }
+        }
+
+        .ride-image{
+            background-image: url('/assets/images/image-2.png');
+            background-size: cover;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            margin-top: 3rem;
+            height: 100vh;
+            border-radius: 1.9rem;
+
+            .ride-bottom{
+                display: flex;
+                justify-content: space-between;
+                align-items: flex-end;
+                padding: 3.75rem 3.2rem;
+
+
+                .ride-stats{
+                    color: white;
+                    width: 30%;
+                    h4{
+                        font-size: 2.5rem;
+                        font-weight: 500;
+                    }
+
+                    p{
+                        margin-top: 0.5rem;
+                    }
+                }
+
+                .ride-icons-store{
+                    cursor: pointer;
+                }
+
+            }
+        }
+    }
+
+    h2{
+        font-size: 4.5rem;
+        font-weight: 500;
     }
 }
 
