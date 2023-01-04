@@ -53,6 +53,12 @@
 .nav .navLeft .navList li {
   padding: 0rem 0.7rem;
   cursor: pointer;
+  -webkit-transition: all 0.3s ease-in;
+  transition: all 0.3s ease-in;
+}
+
+.nav .navLeft .navList li:hover {
+  color: gray;
 }
 
 .nav .navRight {
@@ -188,6 +194,10 @@
   font-weight: 500;
 }
 
+.electric .electric-left p {
+  font-weight: 300;
+}
+
 .electric .electric-left .electric-price {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -286,6 +296,7 @@
 
 .key-features .text-container p {
   margin-top: 0.5rem;
+  font-weight: 300;
 }
 
 .ride-awake {
@@ -310,6 +321,7 @@
 
 .ride-awake .ride-container .ride-texts p {
   font-size: 1rem;
+  font-weight: 300;
 }
 
 .ride-awake .ride-container .ride-image {

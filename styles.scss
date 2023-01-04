@@ -35,6 +35,11 @@
             li{
                 padding: 0rem 0.7rem;
                 cursor: pointer;
+                transition: all 0.3s ease-in;
+
+                &:hover{
+                    color: gray;
+                }
             }
         }
     }
@@ -131,6 +136,10 @@
             font-weight: 500;
         }
 
+        p{
+            font-weight: 300;
+        }
+
         .electric-price{
             display: flex;
             flex-direction: row-reverse;
@@ -200,6 +209,7 @@
 
         p{
             margin-top: 0.5rem;
+            font-weight: 300;
         }
     }
 }
@@ -219,6 +229,7 @@
 
             p{
                 font-size: 1rem;
+                font-weight: 300;
             }
         }
 
