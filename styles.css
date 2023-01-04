@@ -178,6 +178,7 @@
       -ms-flex-align: start;
           align-items: flex-start;
   gap: 3rem;
+  padding-top: 4rem;
 }
 
 .electric .electric-left h2 {
