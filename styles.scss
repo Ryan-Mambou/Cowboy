@@ -7,13 +7,15 @@
     font-family: 'Poppins', sans-serif;
 }
 
+
 .nav{
     display: flex;
     width: 90%;
-    padding: 1rem 5rem;
+    padding: 0.8rem;
     justify-content: space-between;
     align-items: center;
     margin: auto;
+    animation: fromTop 1s ease-in forwards;
 
     .navLeft{
         display: flex;
@@ -61,5 +63,116 @@
                 color: black;
             }
         }
+    }
+}
+
+.hero-container{
+    position: relative;
+    background-color: black;
+    padding-top: 2.5rem;
+    width: 90%;
+    height: 100vh;
+    margin: auto;
+    border-radius: 2rem;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2.5rem;
+
+    .heading{
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        align-items: center;
+    }
+
+    h1{
+        font-size: 5rem;
+        text-align: center;
+        font-weight: 500;
+        line-height: 5rem;
+    }
+        .play{
+            display: flex;
+            align-items: center;
+            gap: 0.5rem
+        }
+
+        .bicycle{
+            object-fit: cover;
+            width: 90%;
+            position: absolute;
+            bottom: 0;
+            animation: fromLeft 1s ease-in forwards;
+        }
+    
+}
+
+.electric{
+    width: 90%;
+    margin: auto;
+    display: flex;
+    margin-top: 8rem;
+    gap: 2rem;
+
+    .electric-left{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 3rem;
+
+
+        h2{
+            font-size: 3.5rem;
+            line-height: 4.5rem;
+            font-weight: 500;
+        }
+
+        .electric-price{
+            display: flex;
+            flex-direction: row-reverse;
+            gap: 1rem;
+            align-items: center;
+
+            div{
+                display: flex;
+                flex-direction: column;
+            }
+
+            button{
+            padding: 0.7rem 1rem;
+            border-radius: 1.5rem;
+            color: white;
+            background-color: black;
+            transition: all 0.5s ease-in;
+            cursor: pointer;
+
+            &:hover{
+                background-color: white;
+                color: black;
+            }
+            }
+        }
+    }
+}
+
+@keyframes fromLeft {
+    0%{
+        transform: translateX(-100%);
+    }
+
+    100%{
+        transform: translateX(0%);
+    }
+}
+
+@keyframes fromTop {
+    0%{
+        transform: translateY(-100%);
+    }
+
+    100%{
+        transform: translateY(0%);
     }
 }

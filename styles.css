@@ -12,7 +12,7 @@
   display: -ms-flexbox;
   display: flex;
   width: 90%;
-  padding: 1rem 5rem;
+  padding: 0.8rem;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -20,6 +20,8 @@
       -ms-flex-align: center;
           align-items: center;
   margin: auto;
+  -webkit-animation: fromTop 1s ease-in forwards;
+          animation: fromTop 1s ease-in forwards;
 }
 
 .nav .navLeft {
@@ -89,5 +91,181 @@
 .nav .navRight button:hover {
   background-color: white;
   color: black;
+}
+
+.hero-container {
+  position: relative;
+  background-color: black;
+  padding-top: 2.5rem;
+  width: 90%;
+  height: 100vh;
+  margin: auto;
+  border-radius: 2rem;
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 2.5rem;
+}
+
+.hero-container .heading {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 1rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.hero-container h1 {
+  font-size: 5rem;
+  text-align: center;
+  font-weight: 500;
+  line-height: 5rem;
+}
+
+.hero-container .play {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 0.5rem;
+}
+
+.hero-container .bicycle {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 90%;
+  position: absolute;
+  bottom: 0;
+  -webkit-animation: fromLeft 1s ease-in forwards;
+          animation: fromLeft 1s ease-in forwards;
+}
+
+.electric {
+  width: 90%;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 8rem;
+  gap: 2rem;
+}
+
+.electric .electric-left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  gap: 3rem;
+}
+
+.electric .electric-left h2 {
+  font-size: 3.5rem;
+  line-height: 4.5rem;
+  font-weight: 500;
+}
+
+.electric .electric-left .electric-price {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+  gap: 1rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.electric .electric-left .electric-price div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.electric .electric-left .electric-price button {
+  padding: 0.7rem 1rem;
+  border-radius: 1.5rem;
+  color: white;
+  background-color: black;
+  -webkit-transition: all 0.5s ease-in;
+  transition: all 0.5s ease-in;
+  cursor: pointer;
+}
+
+.electric .electric-left .electric-price button:hover {
+  background-color: white;
+  color: black;
+}
+
+@-webkit-keyframes fromLeft {
+  0% {
+    -webkit-transform: translateX(-100%);
+            transform: translateX(-100%);
+  }
+  100% {
+    -webkit-transform: translateX(0%);
+            transform: translateX(0%);
+  }
+}
+
+@keyframes fromLeft {
+  0% {
+    -webkit-transform: translateX(-100%);
+            transform: translateX(-100%);
+  }
+  100% {
+    -webkit-transform: translateX(0%);
+            transform: translateX(0%);
+  }
+}
+
+@-webkit-keyframes fromTop {
+  0% {
+    -webkit-transform: translateY(-100%);
+            transform: translateY(-100%);
+  }
+  100% {
+    -webkit-transform: translateY(0%);
+            transform: translateY(0%);
+  }
+}
+
+@keyframes fromTop {
+  0% {
+    -webkit-transform: translateY(-100%);
+            transform: translateY(-100%);
+  }
+  100% {
+    -webkit-transform: translateY(0%);
+            transform: translateY(0%);
+  }
 }
 /*# sourceMappingURL=styles.css.map */
